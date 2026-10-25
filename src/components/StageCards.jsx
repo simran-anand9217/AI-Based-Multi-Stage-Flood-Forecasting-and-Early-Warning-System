@@ -28,7 +28,7 @@ export default function StageCards({
       gap: '16px',
       marginBottom: '24px'
     }}>
-      {/* Stage 1: Rainfall Prediction */}
+      {/* Metric Card: Rainfall Prediction */}
       <div className="glass-panel" style={{ padding: '18px 20px', position: 'relative', overflow: 'hidden' }}>
         <div style={{
           position: 'absolute',
@@ -54,7 +54,7 @@ export default function StageCards({
             </div>
             <div>
               <span style={{ fontSize: '0.68rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 1 // AI METEOROLOGY
+                ATMOSPHERIC RADAR &amp; AI
               </span>
               <h3 style={{ fontSize: '0.95rem', color: '#ffffff' }}>Rainfall Prediction</h3>
             </div>
@@ -89,7 +89,7 @@ export default function StageCards({
         </div>
       </div>
 
-      {/* Stage 2: River Water-Level Prediction */}
+      {/* Metric Card: River Water-Level Prediction */}
       <div className="glass-panel" style={{ padding: '18px 20px', position: 'relative', overflow: 'hidden' }}>
         <div style={{
           position: 'absolute',
@@ -117,7 +117,7 @@ export default function StageCards({
             </div>
             <div>
               <span style={{ fontSize: '0.68rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 2 // HYDROLOGICAL MODEL
+                DEEP LEARNING MODEL
               </span>
               <h3 style={{ fontSize: '0.95rem', color: '#ffffff' }}>Water-Level Forecast</h3>
             </div>
@@ -180,7 +180,7 @@ export default function StageCards({
         </div>
       </div>
 
-      {/* Stage 3: Water Behaviour Analysis */}
+      {/* Metric Card: Water Behaviour Analysis */}
       <div className="glass-panel" style={{ padding: '18px 20px', position: 'relative', overflow: 'hidden' }}>
         <div style={{
           position: 'absolute',
@@ -206,7 +206,7 @@ export default function StageCards({
             </div>
             <div>
               <span style={{ fontSize: '0.68rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 3 // HYDRODYNAMICS
+                HYDRAULIC FLOW ANALYSIS
               </span>
               <h3 style={{ fontSize: '0.95rem', color: '#ffffff' }}>Water Behaviour</h3>
             </div>
@@ -240,7 +240,7 @@ export default function StageCards({
         </div>
       </div>
 
-      {/* Stage 4: Flood Risk Assessment */}
+      {/* Metric Card: Flood Risk Assessment */}
       <div className="glass-panel" style={{ padding: '18px 20px', position: 'relative', overflow: 'hidden' }}>
         <div style={{
           position: 'absolute',
@@ -270,7 +270,7 @@ export default function StageCards({
             </div>
             <div>
               <span style={{ fontSize: '0.68rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 4 // RISK CLASSIFIER
+                MULTI-CRITERIA EVALUATION
               </span>
               <h3 style={{ fontSize: '0.95rem', color: '#ffffff' }}>Flood Risk Index</h3>
             </div>

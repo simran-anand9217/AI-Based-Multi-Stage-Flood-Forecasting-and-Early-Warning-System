@@ -46,7 +46,7 @@ export default function HydroCharts({ waterLevelData, rainfallData, timeHorizon,
             </span>
           </div>
           <h3 style={{ fontSize: '1.05rem', color: '#ffffff' }}>
-            Hydrological Stage-Discharge & Rainfall Hydrograph
+            Hydrological Discharge &amp; Rainfall Hydrograph
           </h3>
         </div>
 
@@ -252,7 +252,7 @@ export default function HydroCharts({ waterLevelData, rainfallData, timeHorizon,
         /* Multi-Model Comparison View */
         <div>
           <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '14px' }}>
-            Empirical benchmark of candidate deep learning models evaluated on basin test set (as reviewed in Section 2 of synopsis):
+            Empirical benchmark of candidate deep learning models evaluated on basin test set (empirical research benchmark):
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
@@ -295,15 +295,15 @@ export default function HydroCharts({ waterLevelData, rainfallData, timeHorizon,
       }}>
         <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <span style={{ width: '12px', height: '3px', background: '#38bdf8', display: 'inline-block' }}></span>
-          Predicted Water Stage ({modelType})
+          Predicted Water Level ({modelType})
         </span>
         <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <span style={{ width: '12px', height: '2px', background: 'var(--amber-400)', display: 'inline-block', borderStyle: 'dashed' }}></span>
-          Warning Stage
+          Warning Threshold
         </span>
         <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <span style={{ width: '12px', height: '2px', background: 'var(--coral-500)', display: 'inline-block' }}></span>
-          Danger Stage
+          Danger Threshold
         </span>
       </div>
     </div>

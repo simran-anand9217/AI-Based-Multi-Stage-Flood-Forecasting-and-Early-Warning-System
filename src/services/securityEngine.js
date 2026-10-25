@@ -1,6 +1,5 @@
 /**
  * Cyber Security Module for AI Flood Forecasting & Warning System
- * Developed for CSE - Cyber Security (2nd Year), GNIOT Greater Noida
  * Features:
  *  - Sensor packet HMAC integrity verification (Anti-Spoofing)
  *  - Common Alerting Protocol (CAP) digital signature generation

@@ -1,6 +1,6 @@
 /**
  * AI-Based Multi-Stage Flood Forecasting Engine
- * Implementing Stages 1-4, 7 & 8 as formulated in the GNIOT CSE Academic Synopsis.
+ * Implementing Sequential Multi-Stage Physical-AI Hydrological Prediction.
  */
 
 // Stage 1: Rainfall Prediction Engine

@@ -4,7 +4,7 @@ export const BASINS = {
     id: 'baitarani',
     name: 'Baitarani River Basin',
     state: 'Odisha, India',
-    referenceNote: 'Featured in academic synopsis (LSTM, CNN, Temporal Fusion Transformer evaluation)',
+    referenceNote: 'Primary operational benchmark basin (LSTM, CNN, Temporal Fusion Transformer evaluation)',
     center: [21.015, 86.155],
     zoom: 11,
     dangerLevel: 17.83, // meters
@@ -140,7 +140,7 @@ export const BASINS = {
     id: 'yamunaHindon',
     name: 'Yamuna-Hindon Basin (Greater Noida / NCR)',
     state: 'Uttar Pradesh & Delhi-NCR, India',
-    referenceNote: 'Host Institute Region (GNIOT Greater Noida / AKTU), frequent monsoon floodplain breaches',
+    referenceNote: 'Yamuna-Hindon NCR Floodplain Region, frequent monsoon floodplain breaches',
     center: [28.48, 77.48],
     zoom: 11,
     dangerLevel: 205.33, // meters above MSL
@@ -227,7 +227,7 @@ export const BASINS = {
       }
     ],
     shelters: [
-      { id: 'YS-01', name: 'GNIOT Campus High-Ground Emergency Center', lat: 28.462, lng: 77.489, capacity: 2500, occupancy: 320, supplies: 'High', contact: '+91-120-2328214' },
+      { id: 'YS-01', name: 'Knowledge Park High-Ground Emergency Center', lat: 28.462, lng: 77.489, capacity: 2500, occupancy: 320, supplies: 'High', contact: '+91-120-2328214' },
       { id: 'YS-02', name: 'Pari Chowk Multipurpose Community Shelter', lat: 28.473, lng: 77.503, capacity: 1800, occupancy: 790, supplies: 'Optimal', contact: '+91-120-2569800' },
       { id: 'YS-03', name: 'Surajpur District Relief Camp', lat: 28.535, lng: 77.472, capacity: 1200, occupancy: 890, supplies: 'Moderate', contact: '+91-120-2441990' },
       { id: 'YS-04', name: 'Noida Stadium Emergency Relief Hub', lat: 28.591, lng: 77.352, capacity: 4000, occupancy: 1100, supplies: 'High', contact: '+91-120-2444444' }

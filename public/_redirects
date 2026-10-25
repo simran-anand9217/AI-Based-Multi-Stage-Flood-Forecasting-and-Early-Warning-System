@@ -1,0 +1,5 @@
+# 301 Canonical URL Redirection & SPA Fallback for HydroAI Guard
+# Netlify & Cloudflare Pages configuration
+
+# SPA fallback: Route all subpaths to index.html with 200 HTTP response
+/*    /index.html   200

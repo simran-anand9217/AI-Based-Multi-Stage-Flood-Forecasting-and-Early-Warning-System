@@ -5,11 +5,11 @@ import {
   Cpu, 
   MapPin, 
   Clock, 
-  FileText, 
   Lock, 
   Volume2, 
   UserCheck,
-  AlertTriangle
+  AlertTriangle,
+  Database
 } from 'lucide-react';
 import { USER_ROLES } from '../services/securityEngine';
 
@@ -21,10 +21,10 @@ export default function Navbar({
   setTimeHorizon,
   userRole,
   setUserRole,
-  onOpenSynopsis,
   onOpenSecurity,
   onOpenEvaluation,
   onOpenAlert,
+  onOpenDatabase,
   riskAssessment
 }) {
   return (
@@ -52,7 +52,7 @@ export default function Navbar({
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <span className={`badge ${riskAssessment.classification === 'High' ? 'badge-coral' : 'badge-cyan'}`}>
             <span className={`pulse-dot ${riskAssessment.classification === 'High' ? 'pulse-dot-red' : 'pulse-dot-green'}`}></span>
-            STAGE 6 // EARLY WARNING STATUS: {riskAssessment.classification.toUpperCase()} RISK
+            EARLY WARNING STATUS: {riskAssessment.classification.toUpperCase()} RISK
           </span>
           <span style={{ color: 'var(--text-main)', fontWeight: 500 }}>
             {selectedBasin.name} — Projected Peak: {riskAssessment.score}/100 Vulnerability Index
@@ -93,19 +93,19 @@ export default function Navbar({
             justifyContent: 'center',
             boxShadow: '0 0 20px rgba(14, 165, 233, 0.5)'
           }}>
-            <Waves size={24} color="#ffffff" />
+            <Waves size={24} color="#ffffff" aria-hidden="true" focusable="false" />
           </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <h1 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ffffff', letterSpacing: '-0.01em' }}>
+              <h1 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ffffff', letterSpacing: '-0.01em', margin: 0 }}>
                 HYDRO<span style={{ color: 'var(--cyan-400)' }}>AI</span> GUARD
+                <span style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>
+                  : AI-Based Flood Forecasting and Early Warning System
+                </span>
               </h1>
-              <span className="badge badge-purple" style={{ fontSize: '0.65rem' }}>
-                CSE - Cyber Security Mini Project
-              </span>
             </div>
             <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-              Multi-Stage AI Flood Forecasting & Early Warning System • GNIOT / AKTU
+              AI Flood Forecasting &amp; Early Warning System
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Navbar({
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
           {/* Basin Selector */}
           <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px' }}>
-            <MapPin size={15} style={{ color: 'var(--cyan-400)' }} />
+            <MapPin size={15} style={{ color: 'var(--cyan-400)' }} aria-hidden="true" />
             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Basin:</span>
             <select
               value={selectedBasin.id}
@@ -168,7 +168,7 @@ export default function Navbar({
 
           {/* Role Switcher */}
           <div className="glass-card" style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 10px' }}>
-            <UserCheck size={14} style={{ color: 'var(--purple-400)' }} />
+            <UserCheck size={14} style={{ color: 'var(--purple-400)' }} aria-hidden="true" />
             <select
               value={userRole.id}
               onChange={(e) => setUserRole(USER_ROLES[e.target.value])}
@@ -188,30 +188,55 @@ export default function Navbar({
           </div>
         </div>
 
-        {/* Modal Action Buttons */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <button onClick={onOpenSynopsis} className="btn btn-outline btn-sm">
-            <FileText size={14} style={{ color: 'var(--cyan-400)' }} />
-            Synopsis & Guide
-          </button>
-
-          <button onClick={onOpenSecurity} className="btn btn-outline btn-sm">
-            <Lock size={14} style={{ color: 'var(--emerald-400)' }} />
-            Cyber Security
-          </button>
-
-          <button onClick={onOpenEvaluation} className="btn btn-outline btn-sm">
-            <Cpu size={14} style={{ color: 'var(--purple-400)' }} />
-            ML Metrics & Retrain
-          </button>
-
-          <button 
-            onClick={onOpenAlert} 
-            className={`btn btn-sm ${riskAssessment.classification === 'High' ? 'btn-danger' : 'btn-primary'}`}
+        {/* Modal Action Links */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <a
+            href="#security"
+            onClick={(e) => { e.preventDefault(); onOpenSecurity(); }}
+            className="btn btn-outline btn-sm"
+            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            <ShieldAlert size={15} />
+            <Lock size={14} style={{ color: 'var(--emerald-400)' }} aria-hidden="true" />
+            Cyber Security
+          </a>
+
+          <a
+            href="#evaluation"
+            onClick={(e) => { e.preventDefault(); onOpenEvaluation(); }}
+            className="btn btn-outline btn-sm"
+            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <Cpu size={14} style={{ color: 'var(--purple-400)' }} aria-hidden="true" />
+            ML Metrics & Retrain
+          </a>
+
+          <a
+            href="#database"
+            onClick={(e) => { e.preventDefault(); if (onOpenDatabase) onOpenDatabase(); }}
+            className="btn btn-outline btn-sm"
+            style={{
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              borderColor: 'rgba(56, 189, 248, 0.4)',
+              background: 'rgba(14, 165, 233, 0.08)'
+            }}
+          >
+            <Database size={14} style={{ color: 'var(--cyan-400)' }} aria-hidden="true" />
+            <span>Live DB &amp; API</span>
+            <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#10b981', boxShadow: '0 0 6px #10b981' }} />
+          </a>
+
+          <a
+            href="#alerts"
+            onClick={(e) => { e.preventDefault(); onOpenAlert(); }}
+            className={`btn btn-sm ${riskAssessment.classification === 'High' ? 'btn-danger' : 'btn-primary'}`}
+            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <ShieldAlert size={15} aria-hidden="true" />
             Early Warning Hub
-          </button>
+          </a>
         </div>
       </div>
     </header>

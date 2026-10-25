@@ -72,7 +72,7 @@ export default function CyberSecurityPanel({
             </div>
             <div>
               <span style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                CSE - CYBER SECURITY SPECIALIZATION MODULE
+                TELEMETRY SECURITY &amp; INTEGRITY DEFENSE
               </span>
               <h2 style={{ fontSize: '1.2rem', color: '#ffffff' }}>
                 IoT Telemetry Cryptographic Integrity & Anti-Spoofing

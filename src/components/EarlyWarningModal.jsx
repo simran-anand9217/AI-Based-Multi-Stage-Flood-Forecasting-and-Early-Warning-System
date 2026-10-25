@@ -143,7 +143,7 @@ export default function EarlyWarningModal({
             </div>
             <div>
               <span style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 6 // EARLY WARNING & DISASTER ALERT HUB
+                EARLY WARNING &amp; DISASTER ALERT HUB
               </span>
               <h2 style={{ fontSize: '1.2rem', color: '#ffffff' }}>
                 {riskAssessment.classification.toUpperCase()} FLOOD ALERT PROTOCOL
@@ -232,7 +232,7 @@ export default function EarlyWarningModal({
             }}>
               <p><strong>URGENT FLOOD BULLETIN:</strong> {basin.name.toUpperCase()} BASIN</p>
               <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>
-                Hydrological models indicate river stage is projected to reach <strong>{waterLevelData.predictedLevel}m</strong>, 
+                Hydrological models indicate river water level is projected to reach <strong>{waterLevelData.predictedLevel}m</strong>, 
                 breaching safety thresholds. Inundation is expected within downstream lowlands with estimated velocity of <strong>{basin.stations[0]?.flowVelocity || 2.4} m/s</strong>.
               </p>
               <div style={{ marginTop: '8px', paddingTop: '8px', borderTop: '1px solid rgba(255,255,255,0.06)', display: 'flex', gap: '16px', fontSize: '0.72rem', color: 'var(--text-dim)' }}>
@@ -255,7 +255,7 @@ export default function EarlyWarningModal({
                 gap: '8px'
               }}>
                 <span className="mono">Digest: {signedAlert.digitalSignature}</span>
-                <span style={{ color: 'var(--cyan-400)' }}>Secured via CSE PKI Subsystem</span>
+                <span style={{ color: 'var(--cyan-400)' }}>Secured via PKI Cryptographic Subsystem</span>
               </div>
             )}
           </div>

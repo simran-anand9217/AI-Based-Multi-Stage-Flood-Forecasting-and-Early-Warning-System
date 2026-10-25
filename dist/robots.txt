@@ -1,0 +1,10 @@
+# User-Agent crawl directives for HydroAI Guard
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /internal/
+
+# Host & Canonical Sitemap Location
+Host: https://hydroai-guard.org
+Sitemap: https://hydroai-guard.org/sitemap.xml

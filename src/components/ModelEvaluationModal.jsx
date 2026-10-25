@@ -65,7 +65,7 @@ export default function ModelEvaluationModal({
             </div>
             <div>
               <span style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', fontWeight: 700 }}>
-                STAGE 8 // MODEL EVALUATION & CONTINUOUS RETRAINING
+                MODEL EVALUATION &amp; CONTINUOUS RETRAINING
               </span>
               <h2 style={{ fontSize: '1.2rem', color: '#ffffff' }}>
                 Hydrological Machine Learning Benchmark
