@@ -260,8 +260,3 @@ This academic prototype stands ready for integration with real-time IoT sensors,
 5. *"Spatiotemporal Flood Depth and Velocity Dynamics Using a Convolutional Neural Network within a Sequential Deep-Learning Framework,"* Environmental Modelling & Software, vol. 185, p. 106307, 2025.
 6. **F. Piadeh, V. Bakhtiari, K. Behzadian, and F. Piadeh**, *"AI-assisted framework using physically informed rainfall–drainage features for real-time urban flood risk forecasting,"* Journal of Hydrology, vol. 677, p. 135819, 2026.
 
----
-
-### Department of Computer Science & Engineering (Cyber Security)
-**Greater Noida Institute of Technology (GNIOT), Greater Noida**  
-*Affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow*
