@@ -5,28 +5,6 @@
 [![React](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%206-cyan.svg)](#system-architecture)
 [![GIS Engine](https://img.shields.io/badge/GIS-Leaflet%20Spatial%20Mapping-emerald.svg)](#stage-5-gis-visualization-and-inundation-mapping)
 [![Cyber Security](https://img.shields.io/badge/Security-HMAC--SHA256%20Telemetry%20Integrity-red.svg)](#cyber-security-and-telemetry-integrity-layer)
-
----
-
-## Academic Attribution & Project Synopsis
-
-**AI-BASED MULTI-STAGE FLOOD FORECASTING AND EARLY WARNING SYSTEM**  
-*Project Synopsis of Mini Project*  
-**Bachelor of Technology in Computer Science & Engineering (Cyber Security) — 2nd Year**  
-**Greater Noida Institute of Technology (GNIOT), Greater Noida**  
-**Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow**  
-*August 2026*
-
-### Project Investigators
-- **Swati Basliyal** (University Roll No: `2501321720060`)
-- **Simran Anand** (University Roll No: `2501321720059`)
-- **Ravina Ranjan** (University Roll No: `2501321720047`)
-
-### Faculty Supervisor
-- **Ms. Arzoo Sorout**, Department of Computer Science & Engineering (Cyber Security)
-
----
-
 ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [Literature Review & Research Gap](#2-literature-review--research-gap)
